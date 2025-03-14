@@ -7,14 +7,18 @@
 
     <h3>Parâmetros Atuais:</h3>
 
+
     <pre>{{ encodedString }}</pre>
+
+    <DownloadButton :jsonString="encodedString" />
+
   </div>
 </template>
 
 <script setup lang="ts">
 import KVForm from '@/components/KVForm.vue';
 import { ref } from 'vue';
-
+import DownloadButton from '@/components/DownloadButton.vue';
 interface Parameter {
   key: string;
   value: string;

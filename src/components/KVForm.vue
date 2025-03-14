@@ -43,7 +43,7 @@
   import Button from 'primevue/button';
   import Divider from 'primevue/divider';
   import IftaLabel from 'primevue/iftalabel';
-  
+
   interface Parameter {
     key: string;
     value: string;
